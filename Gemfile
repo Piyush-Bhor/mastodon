@@ -83,7 +83,7 @@ gem 'sanitize', '~> 6.0'
 gem 'scenic', '~> 1.7'
 gem 'sidekiq', '~> 6.5'
 gem 'sidekiq-bulk', '~> 0.2.0'
-gem 'sidekiq-scheduler', '~> 5.0'
+gem 'sidekiq-scheduler', '~> 5.0', '>= 5.0.6'
 gem 'sidekiq-unique-jobs', '~> 7.1'
 gem 'simple_form', '~> 5.2'
 gem 'simple-navigation', '~> 4.4'
@@ -138,7 +138,7 @@ group :test do
 
   # Browser integration testing
   gem 'capybara', '~> 3.39'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '>= 4.23.0'
 
   # Used to reset the database between system tests
   gem 'database_cleaner-active_record'
@@ -165,11 +165,11 @@ end
 
 group :development do
   # Code linting CLI and plugins
-  gem 'rubocop', require: false
+  gem 'rubocop', '>= 1.65.0', require: false
   gem 'rubocop-capybara', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
-  gem 'rubocop-rspec', require: false
+  gem 'rubocop-rspec', '>= 3.0.3', require: false
   gem 'rubocop-rspec_rails', require: false
 
   # Annotates modules with schema
