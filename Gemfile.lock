@@ -608,7 +608,7 @@ GEM
     psych (5.1.2)
       stringio
     public_suffix (6.0.0)
-    puma (6.4.2)
+    puma (6.4.3)
       nio4r (~> 2.0)
     pundit (2.3.2)
       activesupport (>= 3.0.0)
@@ -1005,7 +1005,7 @@ DEPENDENCIES
   premailer-rails
   propshaft
   public_suffix (~> 6.0)
-  puma (~> 6.3)
+  puma (~> 6.4, >= 6.4.3)
   pundit (~> 2.3)
   rack (~> 2.2.7)
   rack-attack (~> 6.6)
@@ -1061,4 +1061,4 @@ RUBY VERSION
    ruby 3.3.2p78
 
 BUNDLED WITH
-   2.5.11
+   2.3.26
